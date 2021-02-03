@@ -1,0 +1,160 @@
+@import "./variables.css";
+
+.page {
+    margin: 3rem;
+    margin-top: 2.5rem;
+    border-width: 2px 2px 2px 0px;
+    border-style: solid;
+    border-color: var(--blue);
+    border-radius: 20px;
+}
+
+.page__title {
+    color: var(--blue);
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+}
+
+.page .aside {
+    width: 20%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border: 2px solid #676767;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 2px #959597;
+    background-image: linear-gradient(#fefefe, #d3d5d6);
+}
+
+.aside .aside__title {
+    color: var(--blue);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content__title {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.content__title hr {
+    flex-grow: 1;
+    border: none;
+    height: 2px;
+    color: var(--blue);
+    background-color: var(--blue);
+}
+
+.text-box {
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 12px;
+}
+
+.text-box::before {
+    background: none;
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    pointer-events: none;
+  }
+
+.required::after {
+    content:"*";
+    color: red;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.comment:before {
+    content: "*";
+    color: red;
+    font-size: 1rem;
+}
+
+.graph__title {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.page .page__logo {
+    bottom: 0;
+    right: 0;
+    margin-right: -2px;
+    margin-bottom: -2px;
+}
+
+.page__logo img {
+    padding: 20px;
+    border-top: 2px solid var(--blue);
+    border-left: 2px solid var(--blue);
+    border-top-left-radius: 40px;
+}
+
+.border-tl {
+    border-top: 2px solid var(--gray);
+    border-left: 2px solid var(--gray);
+    border-top-left-radius: 1rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+a {
+    text-decoration: solid;
+    text-decoration: revert;
+}
+
+.link {
+    color: var(--blue);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-green {
+    background-color: var(--green-light);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.text-lg {
+    font-size: 1.25rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-2xl {
+    font-size: 1.75rem;
+}
+
+.text-3xl {
+    font-size: 2rem;
+}
+
+.text-sm {
+    font-size: 0.85rem;
+}
